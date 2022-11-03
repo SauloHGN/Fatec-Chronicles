@@ -1,0 +1,13 @@
+package gameStates;
+
+import entidade.Player;
+import main.ChecarColisao;
+
+public class Playing 
+{
+
+	public Player player = new Player(this,KeyH);
+	public ChecarColisao cColisao = new ChecarColisao(this);
+	
+	
+}

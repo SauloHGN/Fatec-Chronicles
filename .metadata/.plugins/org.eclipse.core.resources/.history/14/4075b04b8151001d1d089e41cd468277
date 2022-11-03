@@ -1,0 +1,25 @@
+package main;
+
+import entidade.Enpc;
+
+public class setAssets 
+{
+
+	GamePainel gp;
+	
+	public setAssets(GamePainel gp)
+	{
+		this.gp = gp;
+	}
+	
+	
+	
+	public void setNpc()
+	{
+		gp.npc[1] = new Enpc(gp);
+		gp.npc[1].worldX = gp.tileSize*21;
+		gp.npc[1].worldY = gp.tileSize*21;
+	}
+	
+	
+}

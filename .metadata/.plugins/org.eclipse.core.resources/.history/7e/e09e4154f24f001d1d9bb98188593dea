@@ -1,0 +1,12 @@
+package gameStates;
+
+import entidade.Player;
+import main.ChecarColisao;
+
+public class Playing 
+{
+
+
+	
+	
+}

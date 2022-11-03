@@ -1,0 +1,55 @@
+package entidade;
+
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+
+public class Enpc extends Entidade
+{
+	public Enpc(GamePainel gp)
+	{
+		super(gp);
+		
+		Direction = "Eparado";
+		speed = 5;
+	}
+	
+	public void getPlayerImage()// tiles das animações do personagem
+	{
+		try 
+		{
+			baixo1 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Ebaixo1.png"));
+			baixo2 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Ebaixo2.png"));
+			cima1 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Ecima1.png"));
+			cima2 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Ecima2.png"));
+			costas = ImageIO.read(getClass().getResourceAsStream("/Enpc/Ecostas.png"));
+			left1 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eleft1.png"));
+			left2 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eleft2.png"));
+			left3 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eleft3.png"));
+			right1 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eright1.png"));
+			right2 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eright2.png"));
+			right3 = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eright3.png"));
+			parado = ImageIO.read(getClass().getResourceAsStream("/Enpc/Eparado.png"));
+			
+			
+			telainicio = ImageIO.read(getClass().getResourceAsStream("/menu/telainicio.PNG"));
+			botaojogar = ImageIO.read(getClass().getResourceAsStream("/menu/botaojogar.png"));
+			botaoopc = ImageIO.read(getClass().getResourceAsStream("/menu/botaoopc.png"));
+			botaosair = ImageIO.read(getClass().getResourceAsStream("/menu/botaosair.png"));
+			menufundo = ImageIO.read(getClass().getResourceAsStream("/menu/menufundo.png"));
+			
+		}
+		
+		catch(IOException e ) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+}
