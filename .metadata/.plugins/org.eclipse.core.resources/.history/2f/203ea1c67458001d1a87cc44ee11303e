@@ -1,0 +1,41 @@
+package main;
+
+import java.io.IOException;
+
+import entidade.Enpc;
+import objetos.Livro;
+import objetos.Moeda;
+
+public class setAssets 
+{
+
+	
+	
+	public setAssets(GamePainel gp)
+	{
+		super();
+	}
+	
+	
+	
+	public void setNpc(GamePainel gp)
+	{
+		gp.npc[0] = new Enpc(gp);
+		gp.npc[0].worldX = gp.tileSize*19;
+		gp.npc[0].worldY = gp.tileSize*15;
+	}	
+	
+	public void Itens(GamePainel gp) throws IOException
+	{
+		gp.obj[0] = new Moeda(gp);
+		gp.obj[0].worldX = gp.tileSize*4;
+		gp.obj[0].worldY = gp.tileSize*27; 
+		
+		gp.obj[1] = new Livro(gp);
+		gp.obj[1].worldX = gp.tileSize*8;
+		gp.obj[1].worldY = gp.tileSize*27;
+		
+	}
+	
+	
+}

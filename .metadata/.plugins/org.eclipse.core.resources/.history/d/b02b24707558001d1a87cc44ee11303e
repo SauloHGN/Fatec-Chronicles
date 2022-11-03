@@ -1,0 +1,30 @@
+package objetos;
+
+
+
+import javax.imageio.ImageIO;
+
+import entidade.Entidade;
+import main.GamePainel;
+
+public class barraVida extends Entidade
+{
+	
+	
+	public barraVida(GamePainel gp) 
+	{
+		super(gp);
+		
+		name = "Vida";
+		
+		
+		Image1 = ImageIO.read(getClass().getResourceAsStream("/objetos/Vida1.png"));
+		Image2 = ImageIO.read(getClass().getResourceAsStream("/objetos/Vida2.png"));
+		Image3 = ImageIO.read(getClass().getResourceAsStream("/objetos/Vida3.png"));
+		Image4 = ImageIO.read(getClass().getResourceAsStream("/objetos/Vida4.png"));
+		Image5 = ImageIO.read(getClass().getResourceAsStream("/objetos/Vida5.png"));	
+			
+			
+		
+	}
+}
