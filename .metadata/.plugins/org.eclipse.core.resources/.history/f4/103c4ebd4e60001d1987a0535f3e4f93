@@ -1,0 +1,13 @@
+package entidade;
+
+import main.GamePainel;
+
+public class Cerebro extends Entidade{
+
+	public Cerebro(GamePainel gp) 
+	{
+		super(gp);
+		
+	}
+
+}

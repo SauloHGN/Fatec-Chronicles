@@ -1,0 +1,28 @@
+package entidade;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+import main.InputKeys;
+
+public class Cerebro extends Entidade
+{
+	
+	GamePainel gp;
+	InputKeys KeyH;
+
+	public Cerebro(GamePainel gp, InputKeys KeyH) 
+	{
+		super(gp);
+		
+		this.gp = gp;
+		this.KeyH = KeyH;
+		
+	}
+	
+	public void getCerebroImage()
+	{
+		Cerebro = ImageIO.read(getClass().getResourceAsStream("/Batalha/cerebro.png"));
+	}
+
+}

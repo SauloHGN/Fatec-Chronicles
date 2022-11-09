@@ -1,0 +1,14 @@
+package entidade;
+
+import main.GamePainel;
+import main.InputKeys;
+
+public class Cerebro extends Entidade{
+
+	public Cerebro(GamePainel gp, InputKeys KeyH) 
+	{
+		super(gp);
+		
+	}
+
+}
