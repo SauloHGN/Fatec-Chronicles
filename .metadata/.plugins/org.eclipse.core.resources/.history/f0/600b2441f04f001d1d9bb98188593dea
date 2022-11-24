@@ -1,0 +1,5 @@
+package gameStates;
+
+public interface stateMetodos {
+
+}
