@@ -1,0 +1,19 @@
+package objetos;
+
+import entidade.Attack;
+import main.GamePainel;
+
+public class Projetil extends Attack
+{
+
+	GamePainel gp;
+	
+	public Projetil(GamePainel gp) 
+	{
+		super(gp);
+		
+		this.gp = gp;
+		
+	}
+
+}

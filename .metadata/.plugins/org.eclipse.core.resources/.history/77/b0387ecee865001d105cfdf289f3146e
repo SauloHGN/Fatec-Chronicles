@@ -1,0 +1,44 @@
+package entidade;
+
+
+
+import main.GamePainel;
+
+public class Attack extends Entidade
+{
+
+
+	public int projetilX, projetilY;
+	public boolean Destroy;
+	
+	
+	public Attack(GamePainel gp)
+	{
+		
+		super(gp);
+			
+	}
+	
+	public void startProjetil(int projetilX, int projetilY, boolean Destroy)
+	{
+		this.projetilX = projetilX;
+		this.projetilY = projetilY;	
+		this.Destroy = Destroy;
+		
+	}
+	
+	public void update()
+	{
+		projetilX = projetilX +2;
+		
+		if(projetilX > 1000)
+		{
+			Destroy = true;
+		}
+	}
+	
+
+	
+}
+
+
