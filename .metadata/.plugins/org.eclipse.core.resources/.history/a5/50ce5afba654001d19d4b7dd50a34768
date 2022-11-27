@@ -1,0 +1,44 @@
+package data;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import main.GamePainel;
+
+public class SaveLoad 
+{
+	GamePainel gp;
+	
+	public SaveLoad(GamePainel gp)
+	{
+		this.gp = gp;
+	}
+	
+	public void Salvar(GamePainel gp)
+	{
+		
+		try 
+        {
+            stmt = connection.createStatement();
+
+            String sql = "INSERT INTO progresso(id,level,vida,moeda,posLinha,posColuna) "
+            		   + "VALUES ('"+  + "','"+ gp.player.level + "', '" + gp.player.vida + "', '" 
+            		   + pessoa.getTelefone() + "', '" + pessoa.getEmail() + "')";
+            System.out.println("SQL: " + sql);
+            stmt.executeUpdate(sql);
+           
+            return true;
+        } 
+        catch (SQLException e)
+        {
+            System.out.println(e.getMessage());
+            return false;
+        } 
+		
+	}
+	
+	
+}
