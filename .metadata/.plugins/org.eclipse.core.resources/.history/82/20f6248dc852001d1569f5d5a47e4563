@@ -1,0 +1,11 @@
+package objetos;
+
+import java.awt.image.BufferedImage;
+
+public class superObjetos 
+{
+		public BufferedImage Image;
+		public String name;
+		public boolean colision = false;
+		public int worldX, worldY;
+}
