@@ -1,0 +1,33 @@
+package main;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
+public class InputMouse implements MouseListener, MouseMotionListener
+{
+  
+	private GamePainel gamePainel;
+	
+	public InputMouse(GamePainel gamePainel)
+	{
+		this.gamePainel = gamePainel;
+	}
+	
+	public void mouseDrag(MouseEvent e)
+	{
+		
+	}
+	
+	public void mouseMove(MouseEvent e)
+	{
+		
+	}
+	
+	public void mouseClick(MouseEvent e)
+	{
+		
+	}
+
+	
+}

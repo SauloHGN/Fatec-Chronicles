@@ -1,0 +1,35 @@
+package objetos;
+
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+
+public class inventario extends superObjetos
+{
+	
+	GamePainel gp;
+	
+	public inventario(GamePainel gp)
+	{
+		this.gp = gp;
+		
+		name = "inventario";
+		
+		try 
+		{
+			BufferedImage inventario = ImageIO.read(getClass().getResourceAsStream("/objetos/Inventario.png"));
+				
+			
+			
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+}
