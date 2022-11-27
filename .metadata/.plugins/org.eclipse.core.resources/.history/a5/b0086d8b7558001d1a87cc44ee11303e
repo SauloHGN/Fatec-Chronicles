@@ -1,0 +1,22 @@
+package objetos;
+
+
+
+import javax.imageio.ImageIO;
+
+import entidade.Entidade;
+import main.GamePainel;
+
+public class Livro extends Entidade
+{
+
+	public Livro(GamePainel gp)
+	{
+		super(gp);
+		
+		name = "livro";
+		Image = ImageIO.read(getClass().getResourceAsStream("/itens/livro.png"));
+		
+	}
+	
+}

@@ -1,0 +1,27 @@
+package objetos;
+
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import entidade.Entidade;
+
+public class Livro extends Entidade
+{
+
+	public Livro()
+	{
+		super(gp);
+		
+		name = "livro";
+		try
+		{
+			Image = ImageIO.read(getClass().getResourceAsStream("/itens/livro.png"));
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+}

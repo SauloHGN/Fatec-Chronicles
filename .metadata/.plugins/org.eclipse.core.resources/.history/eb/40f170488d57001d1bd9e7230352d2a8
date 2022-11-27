@@ -1,0 +1,22 @@
+package objetos;
+
+import java.io.IOException;
+
+public class Moeda extends superObjetos
+{
+
+	public Moeda()
+	{
+		name = "moeda";
+		try
+		{
+			
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

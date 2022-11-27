@@ -1,0 +1,26 @@
+package objetos;
+
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Moeda extends superObjetos
+{
+
+	public Moeda()
+	{
+		name = "moeda";
+		try
+		{
+			Image = ImageIO.read(getClass().getResourceAsStream("/itens/moeda.png"));
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		
+		colision = true;
+	}
+	
+	
+}
