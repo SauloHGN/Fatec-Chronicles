@@ -1,0 +1,89 @@
+package main;
+
+public class ColisaoBattle 
+{
+
+	public int x1, x2, y1, y2;
+	
+	public ColisaoBattle(int x1, int y1, int x2, int y2)
+	{
+		 if(x1 < x2) 
+			 {
+				 this.x1 = x1;
+				 this.x2 = x2;
+		     } 
+			 else 
+			 {
+				 this.x1 = x2;
+				 this.x2 = x1;
+		     }
+		     if(y1 < y2)
+		     {
+		    	 this.y1 = y1;
+		    	 this.y2 = y2;
+		     } 
+		     else 
+		     {
+		    	 this.y1 = y2;
+		         this.y2 = y1;
+		     }	
+	}	
+	
+	
+	 public void move(int x1, int y1, int x2, int y2) 
+	 {
+	        if(x1 < x2) 
+	        {
+	            this.x1 = x1;
+	            this.x2 = x2;
+	        } 
+	        else 
+	        {
+	            this.x1 = x2;
+	            this.x2 = x1;
+	        }
+	        if(y1 < y2) 
+	        {
+	            this.y1 = y1;
+	            this.y2 = y2;
+	        } 
+	        else 
+	        {
+	            this.y1 = y2;
+	            this.y2 = y1;
+	        }
+	    }
+	    
+	    public void move(int dx, int dy) 
+	    {
+	        x1 += dx;
+	        x2 += dx;
+	        y1 += dy;
+	        y2 += dy;
+	    }
+	    
+	    public int intersecao(ColisaoBattle cb) 
+	    {
+	        double w = ((x1-x0) + (cb.x1 - cb.x0)) / 2;
+	        double h = ((y1-y0) + (cb.y1 - cb.y0)) / 2;
+	        double dx = ((x1 + x0) - (cb.x1 + cb.x0)) / 2;
+	        double dy = ((y1 + y0) - (cb.y1 + cb.y0)) / 2;
+	        
+	        if (Math.abs(dx) <= w && Math.abs(dy) <= h) 
+	        {
+	            double wy = w * dy; double hx = h * dx;
+	            if (wy > hx) 
+	            {
+	                if (wy > -hx) return FUNDO;
+	                else return ESQUERDO;
+	            } 
+	            else 
+	            {
+	                if (wy > -hx) return DIREITO;
+	                else return TOPO;
+	            }
+	        }
+	        return 0;
+	    }
+	
+}

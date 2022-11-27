@@ -1,0 +1,50 @@
+package entidade;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+
+public class Projetil extends Entidade
+{
+
+
+	public int projetilX, projetilY;
+	
+	
+	
+	public Projetil(GamePainel gp)
+	{
+		
+		super(gp);
+		
+			
+		
+		getImage();
+	}
+	
+	public void startProjetil(int projetilX, int projetilY)
+	{
+		this.projetilX = projetilX;
+		this.projetilY = projetilY;	
+	}
+	
+	public void update()
+	{
+		projetilX = projetilX +2;
+	}
+	
+	public void getImage()
+	{
+		try
+		{
+			projetil = ImageIO.read(getClass().getResourceAsStream("/Batalha/projetil.png"));
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+}
+
+

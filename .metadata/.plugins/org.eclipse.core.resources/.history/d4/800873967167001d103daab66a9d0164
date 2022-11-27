@@ -1,0 +1,8 @@
+package entidade;
+
+public class Action 
+{
+
+	void executa();
+		
+}
