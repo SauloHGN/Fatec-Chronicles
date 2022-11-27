@@ -1,0 +1,37 @@
+package entidade;
+
+import main.GamePainel;
+
+public class ProjetilS extends Entidade
+{
+
+	GamePainel gp;
+	
+	int projetilX, projetilY;
+	String nome;
+	
+	
+	
+	public ProjetilS(int projetilX, int projetilY, GamePainel gp)
+	{
+		super(gp);
+		
+		this.projetilX = projetilX;
+		this.projetilY = projetilY;
+		
+			
+	}
+	
+	public void Start(int projetilY, int projetilX, int speed)
+	{
+		
+	}
+	
+	public void update()
+	{
+		
+	}
+	
+}
+
+

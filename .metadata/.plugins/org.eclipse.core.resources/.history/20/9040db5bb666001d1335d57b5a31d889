@@ -1,0 +1,30 @@
+package entidade;
+
+import java.awt.Graphics2D;
+
+public class Obstaculo 
+{
+
+	public double x;
+	public double vObstaculo = 3;
+	public int comprimento;
+	
+	public Obstaculo(double x, double vObstaculo, int comprimento)
+	{
+		this.x = x;
+		this.vObstaculo = vObstaculo;
+		this.comprimento = comprimento;
+		
+	}
+	
+	public void  Update()
+	{
+		
+	}
+	
+	public void drawObstaculos(Graphics2D g2)
+	{
+		
+	}
+	
+}

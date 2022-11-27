@@ -1,0 +1,58 @@
+package entidade;
+
+import main.GamePainel;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+public class FeichasNPC extends Entidade
+{
+
+	public FeichasNPC(GamePainel gp)
+	{
+		super(gp);	
+		Direction = "parado";
+		
+		getImage();			
+		setDialogo();
+	}
+	
+			
+		public void getImage()// tiles das animações do npc
+		{
+			try 
+			{
+				baixo1 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				baixo2 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				cima1 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				cima2 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				costas = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				left1 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				left2 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				right1 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				right2 = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				parado = ImageIO.read(getClass().getResourceAsStream("/ChNPC/Cparado.png"));
+				
+			}
+			
+			catch(IOException e) 
+			{
+				e.printStackTrace();
+			}			
+		}
+		
+		
+		public void setDialogo()
+		{
+			/*if(gp.player.level == 2)
+			{
+				dialogos[0] ="Feichas";
+			}*/
+			
+			if(gp.player.level == 3)
+			{
+				dialogos[0] ="Me desculpa, mas não posso dizer o codigo!\nPois no segundo instante está é a pior\nnota que um aluno poderia receber";
+			}
+			
+		}
+		
+}

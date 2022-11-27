@@ -1,0 +1,16 @@
+package entidade;
+
+public class Obstaculo 
+{
+
+	public Obstaculo()
+	{
+		
+	}
+	
+	public void  update()
+	{
+		
+	}
+	
+}

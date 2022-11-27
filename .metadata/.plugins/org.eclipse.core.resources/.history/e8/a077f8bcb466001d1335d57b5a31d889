@@ -1,0 +1,13 @@
+package entidade;
+
+public class Obstaculo 
+{
+
+	public Obstaculo()
+	{
+		
+	}
+	
+	
+	
+}
