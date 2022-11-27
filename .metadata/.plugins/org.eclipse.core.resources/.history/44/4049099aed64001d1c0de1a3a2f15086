@@ -1,0 +1,92 @@
+package entidade;
+
+
+
+import java.awt.Graphics2D;
+import java.util.ArrayList;
+import java.util.Random;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+
+public class Projeteis extends Entidade
+{
+
+	GamePainel gp;
+	
+	int projetilX, projetilY;
+	String nome;
+	int velocidade;
+	public ArrayList<Entidade> Projetil = new ArrayList<>();
+	
+	public Projeteis(GamePainel gp)
+	{
+		super(gp);
+			
+	}
+	
+	public void Start(int projetilX, int projetilY, int speed)
+	{
+		this.projetilX = projetilX;
+		this.projetilY = projetilY;
+		this.speed = speed;
+	}
+	
+	public void update()
+	{
+		Projetil();
+	}
+
+	public void getImageProjetilS()
+	{
+		try 
+		{
+			projetil = ImageIO.read(getClass().getResourceAsStream("/Batalha/projetil.png"));
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public void Projetil()
+	{
+		Random rand = new Random();
+		
+		//(max - min) + min               
+		projetilY = rand.nextInt(440 - 300) + 300;
+		projetilX = projetilX + 3;
+		
+		
+		
+		// max Y = 440 // min Y = 300
+		// X = 0
+	
+	}
+	
+	
+	public void drawP(Graphics2D g2)
+	{
+		g2.drawImage(projetil, projetilX, projetilY, 25, 15, null);
+	}
+	
+}
+
+/*	for(int i = 0; i < Projeteis.size(); i++)
+			{
+				if(Projeteis.get(i) !=null)
+				{
+					Projeteis.add(Projeteis.get(i));
+				}	
+			}*/
+
+/*	for(int i = 0; i < Projeteis.size(); i++)
+			{
+				if(Projeteis.get(i) !=null)
+				{
+					Projeteis.get(i).update();
+				}	
+			}*/
+
+//public ArrayList<Entidade> Projeteis = new ArrayList<>();

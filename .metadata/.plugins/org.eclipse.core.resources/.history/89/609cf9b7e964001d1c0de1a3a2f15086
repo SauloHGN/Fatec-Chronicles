@@ -1,0 +1,34 @@
+package entidade;
+
+import javax.imageio.ImageIO;
+
+import main.GamePainel;
+
+public class Ataques extends Projeteis
+{
+	GamePainel gp;
+	
+	public Ataques(GamePainel gp) 
+	{
+		super(gp);
+		this.gp = gp;
+		
+		name = "projetilS";
+		speed = 3;
+		
+	}
+
+	public void getProjetilImage()
+	{
+		
+		try
+		{
+			projetil = ImageIO.read(getClass().getResourceAsStream("/Batalha/projetil.png"));
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+}
