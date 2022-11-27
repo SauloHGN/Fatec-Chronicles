@@ -1,0 +1,26 @@
+package objetos;
+
+
+
+import javax.imageio.ImageIO;
+
+
+import entidade.Entidade;
+import main.GamePainel;
+
+public class Moeda extends Entidade
+{
+
+	public Moeda(GamePainel gp) 
+	{
+		super(gp);
+		
+		name = "moeda";
+		parado = ImageIO.read(getClass().getResourceAsStream("/itens/moeda.png"));
+		
+		colision = true;
+		
+	
+	}
+	
+}

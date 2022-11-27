@@ -1,0 +1,140 @@
+
+package data;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import main.GamePainel;
+
+
+public class Conexao 
+{
+    
+    static GamePainel gp;
+    
+    static Connection con;
+    static Statement stmt;
+    public static Conexao instance = null;
+
+    public Conexao(GamePainel gp) 
+    {
+    	
+    	
+    	try 
+    	{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver Carregado");
+            
+        } 
+    	catch (ClassNotFoundException e) 
+    	{
+            System.out.println("Nao foi possivel carregar o driver MySQL");
+        }
+    }
+    
+   
+    public Conexao getInstance(GamePainel gp) 
+    {
+        if (instance == null) 
+        {
+            instance = new Conexao(gp);
+        }
+        return instance;
+    }
+
+    public static Connection getConnection(GamePainel gp) 
+    {
+        try 
+        {
+            if ((con == null) || (con.isClosed())) 
+            {
+                con = DriverManager.getConnection("jdbc:mysql://localhost/datagame", "root", "");
+                System.out.println("Conectado com sucesso");
+                stmt = con.createStatement();
+            }
+        } 
+        catch (SQLException e)
+        {
+        	System.out.println("Erro na conexao com o banco de dados");
+            System.out.println(e.getMessage());
+        }
+        return con;
+    }
+    
+    
+    public void Salvar(GamePainel gp)
+	{
+		Connection con = Conexao.getConnection(gp);
+		Statement stmt = null;
+		
+		try 
+        {
+			stmt = con.createStatement();
+			
+			if(con != null)
+			{
+				
+			
+			
+		            
+			
+		    String sql = "INSERT INTO progresso(level,vida,moeda,posLinha,posColuna)"
+		    + "VALUES ('"+gp.player.vida+"', '"+gp.player.moeda+"', '"+(gp.player.worldY + gp.player.solidArea.x)/gp.tileSize+"', '"+ (gp.player.worldX + gp.player.solidArea.x)/gp.tileSize+"')";		  
+			System.out.println("SQL: " + sql);
+		    stmt.executeUpdate(sql);
+		    System.out.println("Os dados foram salvados com sucesso");
+		    
+			}
+			
+           
+            
+            return;
+        } 
+        catch (SQLException e)
+        {
+        	System.out.println("Falha ao salvar dados");
+            System.out.println(e.getMessage());
+            return;
+        } 
+		finally
+		{
+	       try 
+	        {
+	    	   if(stmt != null)
+	    	   {
+	    		   stmt.close();
+		           con.close();
+		           System.out.println("Desconectado com sucesso");
+	    	   }
+	           
+	        }
+	        catch (SQLException e)
+	        {
+	            System.out.println("Erro ao desconectar" + e.getMessage());
+	        }
+	    }
+		
+    
+	}
+    
+    
+    
+    
+    
+
+    public void destroy(GamePainel gp) 
+    {
+        try 
+        {
+            con.close();
+        } 
+        catch(SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    
+}
