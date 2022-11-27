@@ -1,0 +1,23 @@
+package entidade;
+
+import java.awt.Graphics2D;
+
+public class Obstaculo 
+{
+
+	public Obstaculo()
+	{
+		
+	}
+	
+	public void  Update()
+	{
+		
+	}
+	
+	public void drawObstaculos(Graphics2D g2)
+	{
+		
+	}
+	
+}
