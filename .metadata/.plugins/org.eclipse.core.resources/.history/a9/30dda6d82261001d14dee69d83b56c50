@@ -1,0 +1,16 @@
+package entidade;
+
+public class Projetil 
+{
+
+	public int projetilX;
+	public int projetilY;
+	public boolean Destroy;
+	public int projetilSpeed = 2;
+	
+	
+	
+	
+	
+	
+}

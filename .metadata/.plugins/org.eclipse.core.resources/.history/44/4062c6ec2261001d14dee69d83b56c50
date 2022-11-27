@@ -1,0 +1,24 @@
+package entidade;
+
+import java.util.Random;
+
+public class Projetil 
+{
+
+	public int projetilX;
+	public int projetilY;
+	public boolean Destroy;
+	public int projetilSpeed = 2;
+	
+	
+	
+	public Projetil()
+	{
+		Random rand = new Random();
+		
+		projetilY = rand.nextInt(440 - 300) + 300;
+		projetilX = projetilX + 3;
+	}
+	
+	
+}

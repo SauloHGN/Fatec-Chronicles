@@ -1,0 +1,28 @@
+package entidade;
+
+import java.util.Random;
+
+public class Projetil 
+{
+
+	public int projetilX = 0;
+	public int projetilY;
+	public boolean Destroy;
+	public int projetilSpeed = 2;
+	
+	
+	
+	public Projetil()
+	{
+		Random rand = new Random();
+		
+		//(max - min) + min
+		projetilY = rand.nextInt(440 - 300) + 300;
+		projetilX = projetilX + projetilSpeed;
+		
+		// max Y = 440 // min Y = 300
+		// X = 0
+	}
+	
+	
+}

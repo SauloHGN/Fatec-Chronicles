@@ -1,0 +1,16 @@
+package entidade;
+
+import main.GamePainel;
+
+public class Ataques extends Projeteis
+{
+	GamePainel gp;
+	
+	public Ataques(GamePainel gp) 
+	{
+		super(gp);
+		this.gp = gp;
+	}
+
+	
+}

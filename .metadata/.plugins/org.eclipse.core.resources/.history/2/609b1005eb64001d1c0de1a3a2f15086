@@ -1,0 +1,58 @@
+package entidade;
+
+import java.util.ArrayList;
+
+import main.GamePainel;
+
+public class Projeteis extends Entidade
+{
+
+	GamePainel gp;
+	
+	int x, y;
+	String nome;
+	int velocidade;
+	
+	
+	public Projeteis(GamePainel gp)
+	{
+		super(gp);
+			
+	}
+	
+	public void Start(int x, int y, int speed)
+	{
+		this.x = x;
+		this.y = y;
+		this.speed = speed;
+	}
+	
+	public void update()
+	{
+		
+	}
+
+	public static GamePainel get(int i) {
+		
+		return i;
+	}
+	
+}
+
+/*	for(int i = 0; i < Projeteis.size(); i++)
+			{
+				if(Projeteis.get(i) !=null)
+				{
+					Projeteis.add(Projeteis.get(i));
+				}	
+			}*/
+
+/*	for(int i = 0; i < Projeteis.size(); i++)
+			{
+				if(Projeteis.get(i) !=null)
+				{
+					Projeteis.get(i).update();
+				}	
+			}*/
+
+//public ArrayList<Entidade> Projeteis = new ArrayList<>();

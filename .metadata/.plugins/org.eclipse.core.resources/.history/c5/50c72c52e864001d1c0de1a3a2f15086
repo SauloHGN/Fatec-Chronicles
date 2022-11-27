@@ -1,0 +1,28 @@
+package entidade;
+
+import main.GamePainel;
+
+public class Projeteis extends Entidade
+{
+
+	GamePainel gp;
+	
+	int x, y;
+	String nome;
+	int velocidade;
+	
+	
+	public Projeteis(GamePainel gp)
+	{
+		super(gp);
+			
+	}
+	
+
+	
+	public void update()
+	{
+		
+	}
+	
+}

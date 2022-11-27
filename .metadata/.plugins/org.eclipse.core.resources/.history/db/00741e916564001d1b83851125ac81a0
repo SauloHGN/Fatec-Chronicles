@@ -1,0 +1,28 @@
+package entidade;
+
+import main.GamePainel;
+
+public class Projeteis
+{
+
+	
+	int x, y;
+	String nome;
+	int velocidade;
+	
+	
+	GamePainel gp;
+	
+	public Projeteis(GamePainel gp)
+	{
+		this.gp = gp;
+		
+		
+	}
+	
+	public void ImageProjetil()
+	{
+		
+	}
+	
+}
