@@ -1,0 +1,24 @@
+#1: Abrir a pasta que você quer colocar no Github 
+#2: Botão direito -> Git Bash Here
+#3: Criar uma branch --> git checkout -b [NomeDaBranch]
+#4: git init -> enter
+#5: git add . -> enter
+#6: git commit -m "mensagem qualquer" -> enter
+#7: git remote add origin [url do repositório; abrir no navegador, ir em Code -> copiar HTTPS] (nota: ESCREVA MANUALMENTE, COLAR VAI DAR ERRO!)
+#8 git push -u origin [nome-da-branch] -> enter (pode usar [nome-da-branch] --force para criar uma branch nova se ela não existir)
+
+
+#9: se der erro copia e cola a ultima mensagem do console no google (se vira)
+
+
+                                                              
+Comandos Extras:                                              
+                                                              
+git Status
+
+dir -> mostra os arquivos da pasta
+
+git config --global user.name "nome" -> altera o nome
+
+
+git config --global user.name -> mostra o nome do usuario
