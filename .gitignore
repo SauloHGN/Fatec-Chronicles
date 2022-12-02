@@ -1,3 +1,5 @@
 .metadata
+.metadata/
 *.js
+/FatecGame2D/dist/
 JavaDoc
