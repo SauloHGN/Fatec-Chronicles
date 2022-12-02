@@ -6,7 +6,7 @@
 
 ### Descrição do Projeto 
 <p align="justify">
-O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, Interação Humano Computador e Engenharia de Software I do curso de Análise e Desenvolvimento de Sistemas.
+O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, Interação Humano Computador e Engenharia de Software I do curso de Análise e Desenvolvimento de Sistemas. O software consiste em um jogo, onde o personagem principal é um aluno que acaba de entrar na faculdade e precisa passar por algumas missões e desafios para conseguir ser aprovado.
   
 
 ### 🛠️ Ferramentas Utilizadas 
