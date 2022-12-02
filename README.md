@@ -19,6 +19,8 @@ O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, I
  ### 📚 Documentação 
 - `JavaDoc:` [JavaDoc.zip](https://github.com/SauloHGN/ProjetoFatec-2Semestre/files/10143147/JavaDoc.zip)
 - `Documento GDD:`
+- `Manual do Usuário:`
+- `Apresentação:`
 
 
 ### Membros da Equipe
