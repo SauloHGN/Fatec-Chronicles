@@ -20,7 +20,8 @@ O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, I
 - `JavaDoc:` [JavaDoc.zip](https://github.com/SauloHGN/ProjetoFatec-2Semestre/files/10143147/JavaDoc.zip)
 - `Documento GDD:` [Trabalho Acelera - Game FATEC Chronicles - Segundo semestre.pdf](https://github.com/SauloHGN/ProjetoFatec-2Semestre/files/10145277/Trabalho.Acelera.-.Game.FATEC.Chronicles.-.Segundo.semestre.pdf)
 - `Manual do Usuário:` [Manual.docx](https://github.com/SauloHGN/ProjetoFatec-2Semestre/files/10145315/Manual.docx)
-- `Apresentação:`
+- `Apresentação:` [Projeto Acelera - FATEC Chronicles.pptx](https://github.com/SauloHGN/ProjetoFatec-2Semestre/files/10155531/Projeto.Acelera.-.FATEC.Chronicles.pptx)
+
 
 
 
