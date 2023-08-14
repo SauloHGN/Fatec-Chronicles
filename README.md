@@ -31,9 +31,9 @@ O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, I
 • Giovanna Rocha<br />
 • João Paulo Caetano<br />
 • Lucas Tavares<br />
-• Saulo Guedes <br />
+• [Saulo Guedes](https://github.com/SauloHGN) <br />
 
 ### Referências
-Bro Code
-RyiSnow
-Kaarin Gaming
+Bro Code <br />
+RyiSnow <br />
+Kaarin Gaming <br />
