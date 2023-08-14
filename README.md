@@ -30,7 +30,7 @@ O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, I
 • Beatriz do Nascimento<br />
 • Giovanna Rocha<br />
 • João Paulo Caetano<br />
-• Lucas Tavares<br />
+• [Lucas Tavares](https://github.com/LucasTavares01)<br />
 • [Saulo Guedes](https://github.com/SauloHGN) <br />
 
 ### Referências
