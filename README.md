@@ -31,4 +31,9 @@ O projeto foi desenvolvido para as disciplinas de Linguagens de Programação, I
 • Giovanna Rocha<br />
 • João Paulo Caetano<br />
 • Lucas Tavares<br />
-• Saulo Guedes
+• Saulo Guedes <br />
+
+### Referências
+Bro Code
+RyiSnow
+Kaarin Gaming
