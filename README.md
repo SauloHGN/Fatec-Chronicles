@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/100096259/205089825-b1bb54c9-e5ea-48b3-a0e9-08883b41df5d.png" />
+  <img src="https://github.com/SauloHGN/Fatec-Chronicles/assets/100096259/0bd7863a-a3d5-46e2-9c0b-1b49a8f8ce18" />
 </p>
-
 <hr>
 
 ### Descrição do Projeto 
